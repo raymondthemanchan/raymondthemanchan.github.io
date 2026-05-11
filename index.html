@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The quiet art of knowing what matters — Deathly</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Introducing Deathly">
+  <meta name="author" content="Deathly">
+  <link rel="canonical" href="https://blog.deathly.ai/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Deathly">
+  <meta property="og:title" content="You're going to die (and it's ok)">
+  <meta property="og:description" content="Introducing Deathly">
+  <meta property="og:url" content="https://blog.deathly.ai/">
+  <meta property="article:published_time" content="2026-05-11">
+
+  <style>
+    :root {
+      --background:          hsl(40, 33%, 96%);
+      --foreground:          hsl(160, 15%, 15%);
+      --card:                hsl(40, 30%, 98%);
+      --primary:             hsl(158, 25%, 28%);
+      --secondary:           hsl(40, 25%, 90%);
+      --muted-foreground:    hsl(160, 8%, 50%);
+      --accent:              hsl(38, 60%, 55%);
+      --border:              hsl(40, 18%, 85%);
+      --radius:              0.5rem;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--foreground);
+      font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      padding: 0 1.5rem;
+      background-color: hsl(40, 30%, 98%, 0.85);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .wordmark {
+      font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: -0.025em;
+      text-decoration: none;
+    }
+
+    .wordmark:hover {
+      opacity: 0.8;
+    }
+
+    /* Layout */
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 6rem;
+    }
+
+    /* Post meta */
+    .post-meta {
+      font-size: 0.8125rem;
+      color: var(--muted-foreground);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .post-meta .divider {
+      margin: 0 0.5rem;
+      color: var(--border);
+    }
+
+    /* Post title */
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -0.025em;
+      color: var(--foreground);
+      margin-bottom: 1rem;
+    }
+
+    /* Lede / subtitle */
+    .lede {
+      font-size: 1.125rem;
+      color: var(--muted-foreground);
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* Body prose */
+    .prose h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+      color: var(--foreground);
+    }
+
+    .prose p {
+      margin-bottom: 1.25rem;
+      font-size: 1rem;
+    }
+
+    .prose a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .prose a:hover {
+      color: var(--accent);
+    }
+
+    .prose blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 2rem 0;
+      padding: 0.25rem 0 0.25rem 1.25rem;
+      color: var(--muted-foreground);
+      font-style: italic;
+    }
+
+    .prose ul, .prose ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .prose li {
+      margin-bottom: 0.4rem;
+    }
+
+    /* Accent rule */
+    .accent-rule {
+      border: none;
+      border-top: 2px solid var(--accent);
+      width: 2.5rem;
+      margin: 2.5rem 0;
+      opacity: 0.7;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      font-size: 0.8125rem;
+      color: var(--muted-foreground);
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="https://deathly.ai/" class="wordmark">Deathly</a>
+  </header>
+
+  <main>
+    <p class="post-meta">
+      <span>May 10, 2026</span>
+      <span class="divider">·</span>
+      <span>5 min read</span>
+    </p>
+
+    <h1>You're going to die (and it's ok)</h1>
+
+    <p class="lede">
+      Introducing Deathly, a product for everyone who hasn't died yet.
+    </p>
+
+    <div class="prose">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat eget tellus in tincidunt. Quisque et diam eros. Praesent egestas sapien nec sollicitudin mattis. Sed sed auctor nulla, vel pulvinar mauris. Curabitur eu metus massa. Cras auctor, sem quis laoreet consectetur, mauris dui mollis neque, a tempor odio nisi eu nisi. Etiam vitae imperdiet dui. Donec faucibus egestas eleifend. Phasellus vel ante consequat, blandit enim ac, malesuada sapien. Etiam vehicula fringilla ex, aliquam ornare est suscipit in. Phasellus ut lacus sed dui luctus efficitur sed ut eros.
+      </p>
+
+      <hr class="accent-rule">
+
+     <h2>Sub-heading</h2>
+
+ 
+      <blockquote>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat eget tellus in tincidunt. Quisque et diam eros. Praesent egestas sapien nec sollicitudin mattis. Sed sed auctor nulla, vel pulvinar mauris. Curabitur eu metus massa. Cras auctor, sem quis laoreet consectetur, mauris dui mollis neque, a tempor odio nisi eu nisi. Etiam vitae imperdiet dui. Donec faucibus egestas eleifend. Phasellus vel ante consequat, blandit enim ac, malesuada sapien. Etiam vehicula fringilla ex, aliquam ornare est suscipit in. Phasellus ut lacus sed dui luctus efficitur sed ut eros.
+      </blockquote>
+
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat eget tellus in tincidunt. Quisque et diam eros. Praesent egestas sapien nec sollicitudin mattis. Sed sed auctor nulla, vel pulvinar mauris. Curabitur eu metus massa. Cras auctor, sem quis laoreet consectetur, mauris dui mollis neque, a tempor odio nisi eu nisi. Etiam vitae imperdiet dui. Donec faucibus egestas eleifend. Phasellus vel ante consequat, blandit enim ac, malesuada sapien. Etiam vehicula fringilla ex, aliquam ornare est suscipit in. Phasellus ut lacus sed dui luctus efficitur sed ut eros.
+      </p>
+
+      <p>
+        Harold and Raymond
+      </p>
+
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Deathly
+  </footer>
+
+</body>
+</html>
